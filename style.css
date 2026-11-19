@@ -1,0 +1,289 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #F8FAFC;
+  color: #1F2937;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 480px;
+  background-color: #F8FAFC;
+}
+
+.screen {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* ボタンの基本スタイル */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  min-height: 56px;
+}
+
+/* スタートボタン */
+#btn-start {
+  background-color: #0D9488;
+  color: #FFFFFF;
+  font-size: 1.125rem;
+  box-shadow: 0 4px 14px rgba(13, 148, 136, 0.3);
+}
+
+#btn-start:hover {
+  background-color: #0F766E;
+  transform: translateY(-1px);
+}
+
+#btn-start:active {
+  transform: translateY(0);
+}
+
+/* メインバナー風ボタン */
+#btn-note {
+  background-color: #1E3A8A;
+  color: #FFFFFF;
+  border-color: #1E3A8A;
+}
+
+#btn-note:hover {
+  background-color: #1E40AF;
+  border-color: #1E40AF;
+}
+
+/* 再試行ボタン */
+#btn-retry {
+  background-color: #FFFFFF;
+  color: #1E3A8A;
+  border-color: #1E3A8A;
+}
+
+#btn-retry:hover {
+  background-color: #F1F5F9;
+  border-color: #1E40AF;
+  color: #1E40AF;
+}
+
+/* 進捗バー */
+.progress-wrap {
+  height: 8px;
+  background-color: #E2E8F0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+#progress-bar {
+  height: 100%;
+  background-color: #0D9488;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+/* 質問部分 */
+#q-progress {
+  font-size: 0.875rem;
+  color: #6B7280;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+#q-text {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1F2937;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* 選択肢ボタン */
+.choice-btn {
+  width: 100%;
+  display: block;
+  background-color: #FFFFFF;
+  border: 2px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  color: #1F2937;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.choice-btn:hover {
+  border-color: #0D9488;
+  background-color: #F0FDFA;
+}
+
+.choice-btn:active {
+  border-color: #0D9488;
+  background-color: #CCFBF1;
+  transform: scale(0.98);
+}
+
+/* ローディング */
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #E2E8F0;
+  border-top: 4px solid #0D9488;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 2rem auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* 結果表示 */
+#result-hours-month {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0D9488;
+  text-align: center;
+  margin: 1.5rem 0;
+  line-height: 1.2;
+}
+
+/* ツールカード */
+.tool-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.tool-card h3 {
+  color: #1E3A8A;
+  font-size: 1.125rem;
+  margin-bottom: 0.75rem;
+}
+
+/* シェアボタン */
+#btn-share-x {
+  background-color: #000000;
+  color: #FFFFFF;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#btn-share-x:hover {
+  background-color: #1F2937;
+}
+
+#btn-share-threads {
+  background-color: #FFFFFF;
+  color: #000000;
+  border: 2px solid #000000;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#btn-share-threads:hover {
+  background-color: #F9FAFB;
+}
+
+/* 時短表示の補足・シェア並び */
+.time-saving {
+  text-align: center;
+}
+
+.note {
+  font-size: 0.8rem;
+  color: #6B7280;
+}
+
+.share {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+#screen-start h1 {
+  color: #1E3A8A;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#screen-start p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#screen-result h2,
+#screen-result h3 {
+  color: #1E3A8A;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #9CA3AF;
+  padding: 1rem 0;
+}
+
+/* PC対応 */
+@media (min-width: 481px) {
+  body {
+    padding: 2rem;
+  }
+  
+  .container {
+    box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    padding: 1rem;
+  }
+  
+  .screen {
+    padding: 3rem;
+  }
+}

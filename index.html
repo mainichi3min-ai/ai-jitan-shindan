@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>30秒でわかる！AI時短ツール診断｜毎日3分AI時短ラボ</title>
+  <meta name="description" content="AI時短ツール診断。4つの質問に答えて、あなたに合った無料AIツール3選と時短効果を簡単に診断。所要時間約30秒。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+  <div id="screen-start" class="screen">
+    <h1>30秒でわかる！AI時短ツール診断</h1>
+    <p>4つの質問に答えるだけで、あなたに合った無料AIツール3選と時短効果がわかります</p>
+    <p>所要時間：約30秒・無料</p>
+    <button id="btn-start" class="btn">診断をはじめる</button>
+    <p>登録不要・無料で使えるツールだけを紹介します</p>
+  </div>
+
+  <div id="screen-quiz" class="screen hidden">
+    <div id="q-progress"></div>
+    <div class="progress-wrap"><div id="progress-bar"></div></div>
+    <p id="q-text"></p>
+    <div id="q-choices"></div>
+  </div>
+
+  <div id="screen-loading" class="screen hidden">
+    <p>あなたに最適なAIを選定中…</p>
+    <div class="spinner"></div>
+  </div>
+
+  <div id="screen-result" class="screen hidden">
+    <h2>診断結果</h2>
+    <div class="time-saving">
+      <p>月 約 <span id="result-hours-month"></span> 時間の時短見込み</p>
+      <p>週 約 <span id="result-hours-week"></span> 時間</p>
+      <p class="note">※作業時間と削減率の想定にもとづく目安です</p>
+    </div>
+    <h3>あなたにおすすめの無料AIツール3選</h3>
+    <div id="result-tools"></div>
+    <a href="#" id="btn-note" class="btn">今すぐチェック</a>
+    <div class="share">
+      <a href="#" id="btn-share-x" class="btn">結果をXでシェア</a>
+      <a href="#" id="btn-share-threads" class="btn">結果をThreadsでシェア</a>
+    </div>
+    <button id="btn-retry" class="btn">もう一度診断する</button>
+  </div>
+  </div>
+
+  <footer>
+    <small>毎日3分AI時短ラボ</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
