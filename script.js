@@ -1,8 +1,8 @@
 // アプリ設定
 const CONFIG = {
-  noteUrl: "https://note.com/mainichi3min_ai",
-  noteLabel: "コピペで使えるプロンプト集（有料note）はこちら",
-  siteUrl: "",
+  noteUrl: "https://lit.link/mainichi3min_ai",
+  noteLabel: "無料プロンプト集・収支シートの受け取りはこちら（リンク集）",
+  siteUrl: "https://takaom0924-sys.github.io/ai-jitan-shindan/",
   shareText: "私のAI時短診断の結果はこちら"
 };
 
@@ -12,10 +12,10 @@ const TOOLS = [
   { id: 'claude', name: 'Claude', url: 'https://claude.ai/', category: 'writing', catch: '自然な日本語と長文要約に定評のあるAI', freeNote: '無料プランで一定のメッセージ数が利用可能' },
   { id: 'gemini', name: 'Google Gemini', url: 'https://gemini.google.com/', category: 'research', catch: 'Google連携で情報収集とリサーチに強い', freeNote: '無料アカウントで基本機能が利用可能' },
   { id: 'perplexity', name: 'Perplexity', url: 'https://www.perplexity.ai/', category: 'research', catch: '出典付きで調べものが速いAI検索エンジン', freeNote: '無料枠で検索と要約が利用可能' },
-  { id: 'notebooklm', name: 'NotebookLM', url: 'https://notebooklm.google.com/', category: 'docs', catch: 'アップロード資料からドキュメント作成ができるAI', freeNote: '無料枠でノートブック作成と要約が利用可能' },
-  { id: 'gamma', name: 'Gamma', url: 'https://gamma.app/', category: 'slides', catch: 'AIがスライド構成とデザインを自動作成', freeNote: '無料枠で一定枚数のスライドが作成可能' },
+  { id: 'notebooklm', name: 'NotebookLM', url: 'https://notebooklm.google.com/', category: 'docs', catch: '手持ちの資料をもとに要約や質問ができるAI', freeNote: '無料枠でノートブック作成と要約が利用可能' },
+  { id: 'gamma', name: 'Gamma', url: 'https://gamma.app/', category: 'slides', catch: 'AIがスライド構成とデザインを自動作成', freeNote: '無料プランではクレジット制でスライド作成が可能' },
   { id: 'canva', name: 'Canva', url: 'https://www.canva.com/', category: 'slides', catch: '豊富なテンプレートでAIデザインが使える', freeNote: '無料プランで基本テンプレートとAI機能が一部利用可能' },
-  { id: 'copilot', name: 'Microsoft Copilot', url: 'https://copilot.microsoft.com/', category: 'data', catch: 'Excelやデータ分析と連携したAI支援', freeNote: '無料アカウントでチャットベースの分析が利用可能' }
+  { id: 'copilot', name: 'Microsoft Copilot', url: 'https://copilot.microsoft.com/', category: 'data', catch: 'Microsoftの汎用AIチャット。文章作成や要約、表の相談にも使える', freeNote: '無料アカウントでチャットが利用可能' }
 ];
 
 const QUESTIONS = [

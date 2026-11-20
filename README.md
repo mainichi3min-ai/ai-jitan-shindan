@@ -14,9 +14,9 @@
 
 差し替えは **`script.js` の上部だけ** で完結します。
 
-1. **有料noteのリンク**: `script.js` 冒頭の `CONFIG.noteUrl`（現在は `https://note.com/mainichi3min_ai`）。有料記事を公開したら、その記事のURLに書き換えます。
+1. **結果画面の導線リンク**: `script.js` 冒頭の `CONFIG.noteUrl`（現在は lit.link のリンク集 `https://lit.link/mainichi3min_ai`、ラベルは「無料プロンプト集・収支シートの受け取りはこちら」）。有料note記事を公開したら、その記事のURLとラベルに書き換えます。
 2. **おすすめツールのリンク（アフィリエイト対応）**: `script.js` の `TOOLS` 配列の各 `url` が公式URLになっています。ASPで提携できたら、該当ツールの `url` をアフィリエイトURLに書き換えるだけです（表示や診断ロジックは変わりません）。
-3. **シェア文面に自サイトURLを付ける**: 公開URLが決まったら `CONFIG.siteUrl` にそのURLを入れると、X／Threadsのシェア文面に自動で付きます。
+3. **シェア文面の自サイトURL**: `CONFIG.siteUrl` に公開URL（`https://takaom0924-sys.github.io/ai-jitan-shindan/`）を設定済み。X／Threadsのシェア文面に自動で付きます。URLを変更したらここも書き換えてください。
 
 ## 診断ロジックの概要
 
