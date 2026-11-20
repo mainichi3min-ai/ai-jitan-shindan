@@ -2,7 +2,7 @@
 const CONFIG = {
   noteUrl: "https://lit.link/mainichi3min_ai",
   noteLabel: "無料プロンプト集・収支シートの受け取りはこちら（リンク集）",
-  siteUrl: "https://takaom0924-sys.github.io/ai-jitan-shindan/",
+  siteUrl: "https://mainichi3min-ai.github.io/ai-jitan-shindan/",
   shareText: "私のAI時短診断の結果はこちら"
 };
 
