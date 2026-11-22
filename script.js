@@ -1,7 +1,7 @@
 // アプリ設定
 const CONFIG = {
-  noteUrl: "https://lit.link/mainichi3min_ai",
-  noteLabel: "無料プロンプト集・収支シートの受け取りはこちら（リンク集）",
+  noteUrl: "https://docs.google.com/forms/d/e/1FAIpQLScPcrwiGsQj3tQnGN5ur5Kyqr6delMM4mR0Ib28bYzLiElxzg/viewform?usp=header",
+  noteLabel: "【無料】事務職向けAI時短プロンプト集を受け取る",
   siteUrl: "https://mainichi3min-ai.github.io/ai-jitan-shindan/",
   shareText: "私のAI時短診断の結果はこちら"
 };
@@ -209,7 +209,7 @@ const showResult = () => {
   }
 
   const recommendName = result.topTools[0] ? result.topTools[0].name : '';
-  let shareText = `AI時短診断で私におすすめのツールは${recommendName}でした！月約${result.monthHours}時間の時短見込み`;
+  let shareText = `AI時短診断で私におすすめのツールは${recommendName}でした！時短の参考試算は月約${result.monthHours}時間`;
   if (CONFIG.siteUrl) {
     shareText += ` ${CONFIG.siteUrl}`;
   }
